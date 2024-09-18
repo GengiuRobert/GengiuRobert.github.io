@@ -1,7 +1,9 @@
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
 #kugaImage {
@@ -9,6 +11,20 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
+}
+
+
+h1,
+h2 {
+    padding-left: 20px;
+}
+
+.infoText {
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 
@@ -122,10 +138,10 @@ li a:hover:not(.active) {
 }
 
 /*scrollable image galery container*/
-.container{
+.container {
     display: flex;
     overflow-x: auto;
     gap: 20px;
-    padding: 20px ;
+    padding: 20px;
     margin-bottom: 20px;
 }
