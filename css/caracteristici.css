@@ -4,7 +4,6 @@ body {
     font-weight: bold;
     margin: 0;
     padding: 0;
-    background-color: aqua;
 }
 
 h1 {
@@ -136,4 +135,25 @@ li a:hover:not(.active) {
     gap: 20px;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #003478;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+}
+
+.back-to-top:hover {
+    background-color: #4E5255;
 }
