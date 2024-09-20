@@ -175,3 +175,7 @@ li a:hover:not(.active) {
 .back-to-top:hover {
     background-color: #4E5255;
 }
+
+html {
+    scroll-behavior: smooth;
+}
