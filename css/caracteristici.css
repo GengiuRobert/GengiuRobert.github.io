@@ -181,4 +181,14 @@ html {
         align-items: center;
         vertical-align: middle;
     }
+
+    .card {
+        flex: 0 0 80%;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
 }
