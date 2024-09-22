@@ -43,10 +43,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #383E42;
+    background-color: #42383a;
     font-family: monospace;
     font-size: 20px;
     font-weight: bold;
+    flex-wrap: nowrap;
 }
 
 li {
@@ -169,4 +170,24 @@ li a:hover:not(.active) {
 
 html {
     scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width:768px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .footer_container a,.footer_container p{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        align-items: center;
+        vertical-align: middle;
+    }
 }
