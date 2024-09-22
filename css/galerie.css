@@ -156,4 +156,24 @@ html {
         align-items: center;
         vertical-align: middle;
     }
+
+    body{
+        text-align: center;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        background-color: whitesmoke;
+        padding: 10px;
+        margin: 5px auto;
+        border: 2px solid #4E5255;
+        border-radius: 10px;
+    }
 }
