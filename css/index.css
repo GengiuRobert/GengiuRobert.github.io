@@ -187,11 +187,27 @@ html {
         vertical-align: middle;
     }
 
-    .footer_container a,.footer_container p{
+    .footer_container a,
+    .footer_container p {
         display: flex;
         flex-direction: column;
-        flex:1;
+        flex: 1;
         align-items: center;
         vertical-align: middle;
     }
+
+    body {
+        text-align: center;
+    }
+
+    .card {
+        flex: 0 0 80%;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
 }
