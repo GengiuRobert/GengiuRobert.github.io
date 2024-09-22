@@ -205,4 +205,39 @@ html {
         width: 100%;
         border-radius: 10px;
     }
+
+    .tabel_motorizari,
+    .tabel_motorizari thead,
+    .tabel_motorizari tbody,
+    .tabel_motorizari th,
+    .tabel_motorizari td,
+    .tabel_motorizari tr {
+        display: block;
+    }
+
+    .tabel_motorizari thead tr {
+        display: none;
+    }
+
+    .tabel_motorizari tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .tabel_motorizari td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    .tabel_motorizari td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 5px;
+        width: 45%;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
 }
