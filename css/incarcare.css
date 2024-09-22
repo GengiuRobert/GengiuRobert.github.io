@@ -21,6 +21,8 @@ nav .logo {
 }
 
 ul {
+    display: flex;
+    flex: 1;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -69,6 +71,7 @@ li a:hover:not(.active) {
     font-family: monospace;
     font-size: large;
     font-weight: bold;
+    text-wrap: nowrap;
     padding: 10px 20px;
 }
 
@@ -178,4 +181,37 @@ li a:hover:not(.active) {
 
 html {
     scroll-behavior: smooth;
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .footer_container a,
+    .footer_container p {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    .card {
+        flex: 0 0 80%;
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
 }
