@@ -1,5 +1,5 @@
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
     margin: 0;
@@ -17,6 +17,8 @@ nav .logo {
 }
 
 ul {
+    display: flex;
+    flex: 1;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -66,6 +68,7 @@ li a:hover:not(.active) {
     font-size: large;
     font-weight: bold;
     padding: 10px 20px;
+    text-wrap: nowrap;
 }
 
 .footer_links a:hover {
@@ -105,9 +108,9 @@ li a:hover:not(.active) {
 }
 
 .gallery h1 {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     text-align: center;
-    margin: 0 auto 20px auto; 
+    margin: 0 auto 20px auto;
     font-size: 40px;
 }
 
@@ -134,4 +137,23 @@ li a:hover:not(.active) {
 
 html {
     scroll-behavior: smooth;
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .footer_container a,
+    .footer_container p {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        vertical-align: middle;
+    }
 }
