@@ -39,6 +39,8 @@ nav .logo {
 }
 
 ul {
+    display: flex;
+    flex: 1;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -60,6 +62,7 @@ li a {
     text-align: center;
     color: white;
     padding: 15px 15px;
+    text-wrap: nowrap;
 }
 
 li a:hover {
@@ -89,6 +92,7 @@ li a:hover:not(.active) {
     font-size: large;
     font-weight: bold;
     padding: 10px 20px;
+    text-wrap: nowrap;
 }
 
 .footer_links a:hover {
