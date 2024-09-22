@@ -153,3 +153,27 @@ li a:hover:not(.active) {
 html {
     scroll-behavior: smooth;
 }
+
+@media screen and (max-width:768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .footer_container a,
+    .footer_container p {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    body {
+        text-align: center;
+        align-items: center;
+    }
+}
